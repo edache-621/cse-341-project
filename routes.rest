@@ -1,4 +1,6 @@
-### LOCALHOST
+### ==================== LOCALHOST ====================
+
+### ==================== USERS - WEEK 1 ====================
 
 ### Get all users
 GET http://localhost:5000/user
@@ -13,6 +15,7 @@ Content-Type: application/json
   "username": "newuser",
   "name": "New User"
 }
+
 
 ### Get user by id
 GET http://localhost:5000/user/6a9c27359d997c5c40013197
@@ -31,3 +34,43 @@ Content-Type: application/json
 
 ### Delete user
 DELETE http://localhost:5000/user/6aa599f4bccb54841c94db13
+
+
+### ==================== CONTACTS - WEEK 2 ====================
+
+### Get all contacts
+GET http://localhost:5000/contacts
+
+
+### Create contact
+POST http://localhost:5000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1995-01-15"
+}
+
+
+### Get contact by id
+GET http://localhost:5000/contacts/6aaa99bc7173fde307f73cb3
+
+
+### Update contact
+PUT http://localhost:5000/contacts/6aaa99bc7173fde307f73cb3
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Updated",
+  "email": "john.updated@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1995-01-15"
+}
+
+
+### Delete contact
+DELETE http://localhost:5000/contacts/6aaa96584723fb4bc41106a4

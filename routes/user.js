@@ -2,17 +2,30 @@ const express = require('express');
 
 const router = express.Router();
 
-const usercontroller = require('../controllers/user');
+const userController = require('../controllers/user');
 
-router.get('/', usercontroller.getAll);
+// ==================== CONTACT ROUTES ====================
 
-router.get('/:id', usercontroller.getsingle);
+router.get('/contacts', userController.getAllContacts);
 
-router.post('/', usercontroller.createuser);
+router.get('/contacts/:id', userController.getSingleContact);
 
-router.put('/:id', usercontroller.updateuser);
+router.post('/contacts', userController.createContact);
 
-router.delete('/:id', usercontroller.deleteuser);
+router.put('/contacts/:id', userController.updateContact);
 
+router.delete('/contacts/:id', userController.deleteContact);
+
+// ==================== USER ROUTES ====================
+
+router.get('/', userController.getAll);
+
+router.get('/:id', userController.getsingle);
+
+router.post('/', userController.createuser);
+
+router.put('/:id', userController.updateuser);
+
+router.delete('/:id', userController.deleteuser);
 
 module.exports = router;
