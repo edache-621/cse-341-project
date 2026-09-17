@@ -8,9 +8,9 @@ const doc = {
         version: '1.0.0'
     },
 
-    host: 'localhost:5000',
+    host: 'cse-341-project-1-fzd2.onrender.com',
 
-    schemes: ['http'],
+    schemes: ['https'],
 
     tags: [
         {

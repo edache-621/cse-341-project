@@ -5,7 +5,7 @@
     "description": "A RESTful API for managing users and contacts. The API supports creating, retrieving, updating, and deleting users and contacts.",
     "version": "1.0.0"
   },
-  "host": "localhost:5000",
+  "host": "cse-341-project-1-fzd2.onrender.com",
   "basePath": "/",
   "tags": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
